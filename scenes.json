@@ -1,0 +1,36 @@
+{
+    "ocbc": {
+        "image_paths": ["all"],
+        "object_paths": ["all"],
+        "obj_param": {
+            "size_param": {
+                "mode": "distance",
+                "max": 80,
+                "min": 30,
+                "loc_sigma": 0.5
+            },
+            "affine_param": {
+                "max_shear": 0.3,
+                "max_comp": 0.5,
+                "rotation": true,
+                "flip": true
+            },
+            "color_param": {
+                "max_brightness_delta": 0.3,
+                "max_contrast_delta": 0.2,
+                "max_hue_shift_delta": 0.2
+            }
+        },
+        "back_param": {
+            "crop_param": {
+                "max_height_reduce": 0.2,
+                "max_width_reduce": 0.2
+            },
+            "color_param": {
+                "max_brightness_delta": 0.3,
+                "max_contrast_delta": 0.2,
+                "max_hue_shift_delta": 0.2
+            }
+        }
+    }
+}
